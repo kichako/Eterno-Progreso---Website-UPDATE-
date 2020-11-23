@@ -244,7 +244,7 @@ body {
 }
 
 .banner-1 {
-  background: url(../img/banner-1.jpg);
+  background: url(../img/banner-1.webp);
   background-size: cover;
   background-position: center;
   padding: 40px 0;
@@ -362,7 +362,7 @@ body {
 }
 
 .banner-2 {
-  background: url(../img/banner-2.jpg);
+  background: url(../img/banner-2.webp);
   background-position: center;
   background-size: cover;
   padding: 40px 0;
