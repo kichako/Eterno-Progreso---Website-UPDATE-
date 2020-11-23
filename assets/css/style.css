@@ -93,13 +93,14 @@ body {
           flex-direction: column;
   margin: auto;
   position: absolute;
-  top: 35%;
+  top: 28%;
 }
 
 .hero .texto-hero .descubre {
   color: #ffffff;
   font-size: 60px;
   font-weight: 500;
+  line-height: 0px;
 }
 
 .hero .texto-hero .planea {
@@ -107,6 +108,7 @@ body {
   font-size: 40px;
   position: relative;
   left: 24%;
+  bottom: 70px;
 }
 
 .hero .texto-hero .vive {
@@ -114,7 +116,8 @@ body {
   font-size: 100px;
   position: relative;
   left: 10%;
-  line-height: 80px;
+  line-height: 0px;
+  bottom: 170px;
 }
 
 .hero .texto-hero .sueno {
@@ -122,6 +125,7 @@ body {
   font-size: 60px;
   position: relative;
   left: 12%;
+  bottom: 290px;
 }
 
 .hero .conoce-mas {
