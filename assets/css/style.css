@@ -18,15 +18,14 @@ body {
 /* AJUSTES HEADER Y PORTADA */
 .cabecera {
   width: 100%;
-  height: 100vh;
-  background: url(../img/bg1.jpg);
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  position: fixed;
+  padding: 10px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  top: 0;
 }
 
-.cabecera .menu {
+.cabecera .contenido-cabecera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,25 +35,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
 }
 
-.cabecera .menu .logo {
-  width: 12%;
+.cabecera .contenido-cabecera .logo {
+  width: 15%;
 }
 
-.cabecera .menu .logo img {
+.cabecera .contenido-cabecera .logo img {
   width: 100%;
   vertical-align: top;
 }
 
-.cabecera .menu .elementos-menu a {
+.cabecera .contenido-cabecera .menu .elementos-menu a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 40px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.cabecera .menu .elementos-menu .menu-boton {
+.cabecera .contenido-cabecera .menu .elementos-menu .btn-menu {
   border: 2px solid #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -62,14 +61,29 @@ body {
   transition: .3s;
 }
 
-.cabecera .menu .elementos-menu .menu-boton:hover {
-  background: #FF934F;
-  border: 2px solid #FF934F;
+.cabecera .contenido-cabecera .menu .elementos-menu .btn-menu:hover {
+  background: #ff934f;
+  padding: 20px 10;
+  border: 2px solid #ff934f;
 }
 
-.cabecera .portada {
-  color: #ffffff;
-  font-weight: 500;
+.scroll {
+  background: #0a0908;
+  z-index: 999;
+}
+
+.hero {
+  background: url(../img/bg1.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .texto-hero {
+  height: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,54 +91,65 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: auto;
   position: absolute;
-  top: 32%;
+  top: 35%;
 }
 
-.cabecera .portada .descubre {
+.hero .texto-hero .descubre {
+  color: #ffffff;
   font-size: 60px;
-  line-height: 0px;
+  font-weight: 500;
 }
 
-.cabecera .portada .planea {
-  font-size: 30px;
-  line-height: 0px;
-  position: relative;
-  bottom: 40px;
-  left: 230px;
-}
-
-.cabecera .portada .vive {
-  font-size: 110px;
-  line-height: 0px;
-  position: relative;
-  bottom: 120px;
-  left: 100px;
-}
-
-.cabecera .portada .sueno {
-  font-size: 50px;
-  position: relative;
-  bottom: 230px;
-  left: 120px;
-}
-
-.cabecera .conoce {
+.hero .texto-hero .planea {
   color: #ffffff;
-  text-align: center;
+  font-size: 40px;
+  position: relative;
+  left: 24%;
+}
+
+.hero .texto-hero .vive {
+  color: #ffffff;
+  font-size: 100px;
+  position: relative;
+  left: 10%;
+  line-height: 80px;
+}
+
+.hero .texto-hero .sueno {
+  color: #ffffff;
+  font-size: 60px;
+  position: relative;
+  left: 12%;
+}
+
+.hero .conoce-mas {
+  width: 1200px;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  bottom: 10px;
-  left: 48%;
+  bottom: 0;
 }
 
-.cabecera .conoce p {
-  font-size: 12px;
-  line-height: 0px;
-}
-
-.cabecera .conoce a {
+.hero .conoce-mas a {
+  display: block;
   color: #ffffff;
-  font-size: 25px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero .conoce-mas .conoce {
+  font-size: 12px;
 }
 
 /* AJUSTES CURSOS */
